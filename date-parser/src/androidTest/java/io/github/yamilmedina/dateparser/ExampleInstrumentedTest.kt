@@ -1,4 +1,4 @@
-package io.github.yamilmedina
+package io.github.yamilmedina.dateparser
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("io.github.yamilmedina", appContext.packageName)
+        assertEquals("io.github.yamilmedina.dateparser.test", appContext.packageName)
     }
 }

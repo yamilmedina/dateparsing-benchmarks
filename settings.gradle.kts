@@ -21,3 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "DateParsingBenchmarks"
 include(":app")
+include(":benchmark")
+include(":date-parser")
