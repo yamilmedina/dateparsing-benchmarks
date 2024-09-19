@@ -60,7 +60,7 @@ class DateParsingBenchmark {
     }
 
     companion object {
-        const val ITERATIONS = 300_000
+        const val ITERATIONS = 500_000
         const val INPUT = "2030-11-11T07:59:10Z"
     }
 }
