@@ -5,7 +5,6 @@ import io.github.yamilmedina.dateparser.DateParserExt.simpleDateFormat
 import java.time.Instant
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
-import java.time.temporal.TemporalAccessor
 import java.util.Date
 import java.util.Locale
 
@@ -22,11 +21,11 @@ fun String.withTextSimpleDateFormat(): Date? {
     return simpleDateFormat.parse(this)
 }
 
-fun String.withLocalDateParser(): LocalDateTime? {
+fun String.withLocalDateTimeParser(): LocalDateTime? {
     return LocalDateTime.parse(this, fullDateShortTimeFormatter)
 }
 
-fun String.withJavaInstantParser(): TemporalAccessor {
+fun String.withJavaInstantParser(): Instant {
     return Instant.parse(this)
 }
 

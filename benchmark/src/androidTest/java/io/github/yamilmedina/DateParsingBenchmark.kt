@@ -5,7 +5,7 @@ import androidx.benchmark.junit4.measureRepeated
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import io.github.yamilmedina.dateparser.withJavaInstantParser
 import io.github.yamilmedina.dateparser.withKotlinInstantParser
-import io.github.yamilmedina.dateparser.withLocalDateParser
+import io.github.yamilmedina.dateparser.withLocalDateTimeParser
 import io.github.yamilmedina.dateparser.withTextSimpleDateFormat
 import org.junit.Rule
 import org.junit.Test
@@ -36,7 +36,7 @@ class DateParsingBenchmark {
     fun dateLocalDateParsing() {
         benchmarkRule.measureRepeated {
             repeat(ITERATIONS) {
-                INPUT.withLocalDateParser()
+                INPUT.withLocalDateTimeParser()
             }
         }
     }
@@ -60,7 +60,7 @@ class DateParsingBenchmark {
     }
 
     companion object {
-        const val ITERATIONS = 100_000
+        const val ITERATIONS = 300_000
         const val INPUT = "2030-11-11T07:59:10Z"
     }
 }
