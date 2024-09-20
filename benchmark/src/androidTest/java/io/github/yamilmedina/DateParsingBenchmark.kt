@@ -26,27 +26,21 @@ class DateParsingBenchmark {
     @Test
     fun simpleDateFormatParsing() {
         benchmarkRule.measureRepeated {
-            repeat(ITERATIONS) {
-                INPUT.withTextSimpleDateFormat()
-            }
+            repeat(ITERATIONS) { INPUT.withTextSimpleDateFormat() }
         }
     }
 
     @Test
     fun dateLocalDateParsing() {
         benchmarkRule.measureRepeated {
-            repeat(ITERATIONS) {
-                INPUT.withLocalDateTimeParser()
-            }
+            repeat(ITERATIONS) { INPUT.withLocalDateTimeParser() }
         }
     }
 
     @Test
     fun dateJavaInstantParsing() {
         benchmarkRule.measureRepeated {
-            repeat(ITERATIONS) {
-                INPUT.withJavaInstantParser()
-            }
+            repeat(ITERATIONS) { INPUT.withJavaInstantParser() }
         }
     }
 
