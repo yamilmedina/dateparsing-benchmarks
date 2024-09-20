@@ -3,7 +3,7 @@ package io.github.yamilmedina.dateparser
 import org.junit.Test
 import kotlin.time.measureTime
 
-class ParsingUnitTest {
+class NaiveBenchmarkParsingUnitTest {
     @Test
     fun measureSimpleDateFormat() {
         measureTime { repeat(ITERATIONS) { INPUT.withTextSimpleDateFormat() } }
