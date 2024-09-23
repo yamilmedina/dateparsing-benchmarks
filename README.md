@@ -7,6 +7,8 @@ Used to compare different libraries and methods for parsing date and time string
 - LocalDateTime
 - Instant
 
+## Project Structure
+
 ```mermaid
 graph 
     A[app] --> B[date-parser lib]
@@ -15,11 +17,9 @@ graph
 
 ## Results
 
-585,845,375
-1,199,443,376
-365,684,542
+For more accurate results, run the tests on different devices.
 
-## Naive benchmarks - using unit tests
+## Naive benchmarks - Using Unit Test
 
 | Library          | Time (ms)  |
 |------------------|------------|
@@ -27,7 +27,7 @@ graph
 | LocalDateTime    | 200.570792 |
 | Instant          | 361.839208 |
 
-## Benchmarks - using Microbenchmark library
+## Benchmarks - Using Microbenchmark library
 
 | Library          | Time (ns)     |
 |------------------|---------------|
